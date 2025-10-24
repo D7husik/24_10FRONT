@@ -1,4 +1,4 @@
-# Dzhusik Engineering College Website
+<img width="1882" height="1061" alt="image" src="https://github.com/user-attachments/assets/1d02f20a-71b0-4c42-a787-6e08c1b438c7" /># Dzhusik Engineering College Website
 
 A modern, responsive brochure website for Dzhusik Engineering College, built with HTML5, CSS3, Bootstrap 5, and vanilla JavaScript.
 
@@ -322,3 +322,20 @@ _(See submitted PDF "Quality Evidence" for annotated screenshots)_
 6. Registration form - Success confirmation
 7. Contact form - Submission feedback
 8. Programs page - Tab filtering in action
+
+
+<img width="1904" height="976" alt="image" src="https://github.com/user-attachments/assets/418fc784-c9a2-429d-b630-2ea72ae5e935" />
+<img width="1846" height="946" alt="image" src="https://github.com/user-attachments/assets/d86a9e7d-3ed7-4939-8711-f6ea005c7428" />
+<img width="1882" height="1061" alt="image" src="https://github.com/user-attachments/assets/a6ba69bc-7d06-49d5-aba8-5d08c8a5f199" />
+
+![1](https://github.com/user-attachments/assets/1c59b54d-01da-4598-a80b-bee11fa8ce80)
+![2](https://github.com/user-attachments/assets/52a5b21c-8da8-4a8e-a60b-5bc6c51f43be)
+![4](https://github.com/user-attachments/assets/0eff3431-3097-4e37-8568-56054f3a3887)
+![5](https://github.com/user-attachments/assets/a44892d1-dd59-4a8f-a719-082a6ab989a2)
+
+![6](https://github.com/user-attachments/assets/167dfc18-0979-44a5-88e7-cc85f5625362)
+
+![88](https://github.com/user-attachments/assets/f744e429-faee-4db4-98b6-5cd40ec7740f)
+
+
+
