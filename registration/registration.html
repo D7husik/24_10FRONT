@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - Dzhusik Engineering College</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="../styles.css" rel="stylesheet">
+    <link href="registration-styles.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/logoNoBG.png">
+    <link rel="shortcut icon" type="image/png" href="images/logoNoBG.png">
+    <link rel="apple-touch-icon" href="images/logoNoBG.png">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center flex-wrap">
+                <div>
+                    <a href="tel:+996555123456"><i class="fas fa-phone"></i> +996 555 123 456</a>
+                    <a href="mailto:info@dzhusik.edu"><i class="fas fa-envelope"></i> info@dzhusik.edu</a>
+                </div>
+                <div>
+                    <a href="registration.html" class="btn btn-sm btn-apply">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-graduation-cap brand-icon"></i>
+                DZHUSIK <span class="brand-highlight">ENGINEERING</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../programs.html">Programs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../admissions.html">Admissions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../student-life.html">Student Life</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="registration.html">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Student Registration</h1>
+            <p class="tagline">Begin Your Engineering Journey</p>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="alert alert-success d-none" id="successAlert" role="alert">
+                        <i class="fas fa-check-circle"></i>
+                        <strong>Registration Successful!</strong>
+                        <p class="mb-0 mt-2">Thank you for registering with Dzhusik Engineering College. We have received your application and will contact you within 3-5 business days with next steps.</p>
+                    </div>
+
+                    <div class="card shadow-sm" id="formCard">
+                        <div class="card-body p-4">
+                            <h2 class="card-title mb-4">Application Form</h2>
+                            <form id="registrationForm" novalidate>
+                                <!-- Personal Information -->
+                                <h4 class="mb-3">Personal Information</h4>
+                                
+                                <div class="mb-3">
+                                    <label for="fullName" class="form-label">
+                                        Full Name <span class="required">*</span>
+                                    </label>
+                                    <input 
+                                        type="text" 
+                                        class="form-control" 
+                                        id="fullName" 
+                                        name="fullName"
+                                        required
+                                        aria-required="true"
+                                        aria-describedby="fullNameFeedback"
+                                    >
+                                    <div class="invalid-feedback" id="fullNameFeedback">
+                                        Please enter your full name (at least 2 characters).
+                                    </div>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="email" class="form-label">
+                                            Email Address <span class="required">*</span>
+                                        </label>
+                                        <input 
+                                            type="email" 
+                                            class="form-control" 
+                                            id="email" 
+                                            name="email"
+                                            required
+                                            aria-required="true"
+                                            aria-describedby="emailFeedback"
+                                        >
+                                        <div class="invalid-feedback" id="emailFeedback">
+                                            Please enter a valid email address.
+                                        </div>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 mb-3">
+                                        <label for="phone" class="form-label">
+                                            Phone Number <span class="required">*</span>
+                                        </label>
+                                        <input 
+                                            type="tel" 
+                                            class="form-control" 
+                                            id="phone" 
+                                            name="phone"
+                                            placeholder="+996 XXX XXX XXX"
+                                            required
+                                            aria-required="true"
+                                            aria-describedby="phoneFeedback"
+                                        >
+                                        <div class="invalid-feedback" id="phoneFeedback">
+                                            Please enter a valid phone number.
+                                        </div>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Program Information -->
+                                <h4 class="mb-3 mt-4">Program Details</h4>
+
+                                <div class="mb-3">
+                                    <label for="program" class="form-label">
+                                        Desired Program <span class="required">*</span>
+                                    </label>
+                                    <select 
+                                        class="form-select" 
+                                        id="program" 
+                                        name="program"
+                                        required
+                                        aria-required="true"
+                                        aria-describedby="programFeedback"
+                                    >
+                                        <option value="" selected disabled>Select a program...</option>
+                                        <option value="computer-engineering">Computer Engineering</option>
+                                        <option value="civil-engineering">Civil Engineering</option>
+                                        <option value="electrical-engineering">Electrical Engineering</option>
+                                        <option value="mechanical-engineering">Mechanical Engineering</option>
+                                        <option value="industrial-engineering">Industrial Engineering</option>
+                                        <option value="chemical-engineering">Chemical Engineering</option>
+                                        <option value="software-engineering-ms">Software Engineering (MS)</option>
+                                        <option value="robotics-automation-ms">Robotics & Automation (MS)</option>
+                                        <option value="sustainable-engineering-ms">Sustainable Engineering (MS)</option>
+                                    </select>
+                                    <div class="invalid-feedback" id="programFeedback">
+                                        Please select a program.
+                                    </div>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label">
+                                        Study Mode <span class="required">*</span>
+                                    </label>
+                                    <div>
+                                        <div class="form-check form-check-inline">
+                                            <input 
+                                                class="form-check-input" 
+                                                type="radio" 
+                                                name="studyMode" 
+                                                id="fullTime" 
+                                                value="full-time"
+                                                required
+                                                aria-required="true"
+                                            >
+                                            <label class="form-check-label" for="fullTime">
+                                                Full-Time
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input 
+                                                class="form-check-input" 
+                                                type="radio" 
+                                                name="studyMode" 
+                                                id="partTime" 
+                                                value="part-time"
+                                            >
+                                            <label class="form-check-label" for="partTime">
+                                                Part-Time
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input 
+                                                class="form-check-input" 
+                                                type="radio" 
+                                                name="studyMode" 
+                                                id="online" 
+                                                value="online"
+                                            >
+                                            <label class="form-check-label" for="online">
+                                                Online
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="invalid-feedback d-block" id="studyModeFeedback" style="display: none !important;">
+                                        Please select a study mode.
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="intakeDate" class="form-label">
+                                        Intended Intake <span class="required">*</span>
+                                    </label>
+                                    <input 
+                                        type="date" 
+                                        class="form-control" 
+                                        id="intakeDate" 
+                                        name="intakeDate"
+                                        required
+                                        aria-required="true"
+                                        aria-describedby="intakeDateFeedback"
+                                    >
+                                    <div class="invalid-feedback" id="intakeDateFeedback">
+                                        Please select your intended start date.
+                                    </div>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                </div>
+
+                                <!-- Account Security -->
+                                <h4 class="mb-3 mt-4">Account Security</h4>
+
+                                <div class="mb-3">
+                                    <label for="password" class="form-label">
+                                        Password <span class="required">*</span>
+                                    </label>
+                                    <input 
+                                        type="password" 
+                                        class="form-control" 
+                                        id="password" 
+                                        name="password"
+                                        required
+                                        aria-required="true"
+                                        aria-describedby="passwordFeedback passwordHelp"
+                                    >
+                                    <div class="password-strength" id="passwordStrength">
+                                        <div class="password-strength-bar"></div>
+                                    </div>
+                                    <small id="passwordHelp" class="form-text text-muted">
+                                        Must be at least 8 characters with uppercase, lowercase, number, and special character.
+                                    </small>
+                                    <div class="invalid-feedback" id="passwordFeedback">
+                                        Password does not meet requirements.
+                                    </div>
+                                    <div class="valid-feedback">
+                                        Strong password!
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="confirmPassword" class="form-label">
+                                        Confirm Password <span class="required">*</span>
+                                    </label>
+                                    <input 
+                                        type="password" 
+                                        class="form-control" 
+                                        id="confirmPassword" 
+                                        name="confirmPassword"
+                                        required
+                                        aria-required="true"
+                                        aria-describedby="confirmPasswordFeedback"
+                                    >
+                                    <div class="invalid-feedback" id="confirmPasswordFeedback">
+                                        Passwords do not match.
+                                    </div>
+                                    <div class="valid-feedback">
+                                        Passwords match!
+                                    </div>
+                                </div>
+
+                                <!-- Optional Information -->
+                                <h4 class="mb-3 mt-4">Additional Information</h4>
+
+                                <div class="mb-3">
+                                    <label for="scholarshipInterest" class="form-label">
+                                        Scholarship Interest
+                                    </label>
+                                    <select 
+                                        class="form-select" 
+                                        id="scholarshipInterest" 
+                                        name="scholarshipInterest"
+                                        aria-describedby="scholarshipHelp"
+                                    >
+                                        <option value="" selected>Select if applicable...</option>
+                                        <option value="merit">Merit-Based Scholarship</option>
+                                        <option value="need">Need-Based Scholarship</option>
+                                        <option value="sports">Sports Scholarship</option>
+                                        <option value="research">Research Scholarship</option>
+                                        <option value="not-interested">Not Interested</option>
+                                    </select>
+                                    <small id="scholarshipHelp" class="form-text text-muted">
+                                        Optional: Indicate if you wish to be considered for scholarships.
+                                    </small>
+                                </div>
+
+                                <!-- Terms and Agreement -->
+                                <h4 class="mb-3 mt-4">Terms & Conditions</h4>
+
+                                <div class="mb-4">
+                                    <div class="form-check">
+                                        <input 
+                                            class="form-check-input" 
+                                            type="checkbox" 
+                                            id="agreeTerms" 
+                                            name="agreeTerms"
+                                            required
+                                            aria-required="true"
+                                            aria-describedby="agreeTermsFeedback"
+                                        >
+                                        <label class="form-check-label" for="agreeTerms">
+                                            I agree to the <a href="#" target="_blank">Terms and Conditions</a> and <a href="#" target="_blank">Privacy Policy</a> <span class="required">*</span>
+                                        </label>
+                                        <div class="invalid-feedback" id="agreeTermsFeedback">
+                                            You must agree to the terms and conditions to proceed.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="d-grid gap-2">
+                                    <button type="submit" class="btn btn-submit" id="submitBtn">
+                                        Submit Application
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>Dzhusik Engineering College</h5>
+                    <p>Empowering future engineers with world-class education and hands-on experience.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="student-life.html">Student Life</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Programs</h5>
+                    <ul>
+                        <li><a href="programs.html">Computer Engineering</a></li>
+                        <li><a href="programs.html">Civil Engineering</a></li>
+                        <li><a href="programs.html">Electrical Engineering</a></li>
+                        <li><a href="programs.html">Mechanical Engineering</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Contact</h5>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Bishkek, Kyrgyzstan</li>
+                        <li><i class="fas fa-phone"></i> +996 555 123 456</li>
+                        <li><i class="fas fa-envelope"></i> info@dzhusik.edu</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="text-center pt-3">
+                <p>&copy; 2025 Dzhusik Engineering College. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="registration.js"></script>
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Dzhusik Engineering College</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/logoNoBG.png">
+    <link rel="shortcut icon" type="image/png" href="images/logoNoBG.png">
+    <link rel="apple-touch-icon" href="images/logoNoBG.png">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center flex-wrap">
+                <div>
+                    <a href="tel:+996555123456"><i class="fas fa-phone"></i> +996 555 123 456</a>
+                    <a href="mailto:info@dzhusik.edu"><i class="fas fa-envelope"></i> info@dzhusik.edu</a>
+                </div>
+                <div>
+                    <a href="registration/registration.html" class="btn btn-sm btn-apply">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-graduation-cap brand-icon"></i>
+                DZHUSIK <span class="brand-highlight">ENGINEERING</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="programs.html">Programs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admissions.html">Admissions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="student-life.html">Student Life</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registration/registration.html">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" style="padding: 5rem 0;">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p class="tagline">Get in Touch</p>
+            <p class="hero-text">Have questions? We're here to help! Fill out the form below and we'll get back to you as soon as possible.</p>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="contact-info">
+                        <h2 class="section-title">Our Information</h2>
+                        <div class="feature-card mb-4">
+                            <h4><i class="fas fa-map-marker-alt text-warning"></i> Visit Us</h4>
+                            <p>123 Innovation Street<br>Bishkek, Kyrgyzstan</p>
+                        </div>
+                        <div class="feature-card mb-4">
+                            <h4><i class="fas fa-clock text-warning"></i> Office Hours</h4>
+                            <p>Monday - Friday: 9:00 AM - 5:00 PM<br>Saturday: 9:00 AM - 1:00 PM<br>Sunday: Closed</p>
+                        </div>
+                        <div class="feature-card">
+                            <h4><i class="fas fa-phone text-warning"></i> Contact Details</h4>
+                            <p>Phone: +996 555 123 456<br>Email: info@dzhusik.edu</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-form-wrapper">
+                        <h2 class="section-title">Send Us a Message</h2>
+                        <form id="contactForm" class="needs-validation" novalidate>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Full Name *</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                                <div class="invalid-feedback">
+                                    Please enter your name.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                                <div class="invalid-feedback">
+                                    Please enter a valid email address.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Subject *</label>
+                                <input type="text" class="form-control" id="subject" name="subject" required>
+                                <div class="invalid-feedback">
+                                    Please enter a subject.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message *</label>
+                                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                                <div class="invalid-feedback">
+                                    Please enter your message.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="verification" class="form-label">Verification *</label>
+                                <div class="input-group">
+                                    <span class="input-group-text" id="captcha">5 + 3 = ?</span>
+                                    <input type="number" class="form-control" id="verification" required>
+                                    <div class="invalid-feedback">
+                                        Please solve the verification problem.
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                        <div class="alert alert-success mt-3 d-none" id="successMessage">
+                            <i class="fas fa-check-circle"></i> Your message has been sent successfully! We'll get back to you soon.
+                        </div>
+                        <div class="alert alert-danger mt-3 d-none" id="errorMessage">
+                            <i class="fas fa-exclamation-circle"></i> There was an error sending your message. Please try again.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11698.439819724282!2d74.58959716977537!3d42.87670940000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389ec81f4a0a71d9%3A0x3772abf0dd5e8d05!2sAmerican%20University%20of%20Central%20Asia!5e0!3m2!1sen!2skg!4v1697865547276!5m2!1sen!2skg" 
+                            width="100%" 
+                            height="450" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>Dzhusik Engineering College</h5>
+                    <p>Empowering future engineers with world-class education and hands-on experience.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="student-life.html">Student Life</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Programs</h5>
+                    <ul>
+                        <li><a href="programs.html">Computer Engineering</a></li>
+                        <li><a href="programs.html">Civil Engineering</a></li>
+                        <li><a href="programs.html">Electrical Engineering</a></li>
+                        <li><a href="programs.html">Mechanical Engineering</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Contact</h5>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Bishkek, Kyrgyzstan</li>
+                        <li><i class="fas fa-phone"></i> +996 555 123 456</li>
+                        <li><i class="fas fa-envelope"></i> info@dzhusik.edu</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="text-center pt-3">
+                <p>&copy; 2025 Dzhusik Engineering College. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Form validation and submission handling
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('contactForm');
+            const successMessage = document.getElementById('successMessage');
+            const errorMessage = document.getElementById('errorMessage');
+            const verificationInput = document.getElementById('verification');
+
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+                
+                // Check if the form is valid
+                if (!form.checkValidity()) {
+                    event.stopPropagation();
+                    form.classList.add('was-validated');
+                    return;
+                }
+
+                // Verify the anti-spam answer
+                if (verificationInput.value !== '8') {
+                    verificationInput.setCustomValidity('Incorrect answer');
+                    form.classList.add('was-validated');
+                    return;
+                }
+
+                // Simulate form submission (replace with actual form submission logic)
+                // Here you would typically send the data to a server
+                setTimeout(() => {
+                    // Show success message
+                    successMessage.classList.remove('d-none');
+                    errorMessage.classList.add('d-none');
+                    
+                    // Reset form
+                    form.reset();
+                    form.classList.remove('was-validated');
+
+                    // Hide success message after 5 seconds
+                    setTimeout(() => {
+                        successMessage.classList.add('d-none');
+                    }, 5000);
+                }, 1000);
+            });
+
+            // Reset verification input validation on change
+            verificationInput.addEventListener('input', function() {
+                verificationInput.setCustomValidity('');
+            });
+        });
+    </script>
+</body>
+</html>
